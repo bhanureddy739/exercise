@@ -1,8 +1,7 @@
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #f7f7f7;
+  font-family: 'Arial', sans-serif;
+  background: #f0f8ff; /* soft background for visual comfort */
 }
 
 .app {
@@ -12,41 +11,151 @@ body {
 
 h1 {
   color: #2e7d32;
+  margin-bottom: 20px;
+  font-size: 2em;
 }
 
-.container {
+/* Search */
+.search {
+  padding: 12px 20px;
+  width: 260px;
+  margin-bottom: 15px;
+  border-radius: 30px;
+  border: 2px solid #2e7d32;
+  outline: none;
+  font-size: 1.1em;
+}
+
+/* Filter Tabs */
+.filter {
+  margin-bottom: 20px;
+}
+
+.filter button {
+  background: #fff;
+  border: 2px solid #2e7d32;
+  color: #2e7d32;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.filter button.active {
+  background: #2e7d32;
+  color: #fff;
+}
+
+/* Cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 25px 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  margin: 8px 0;
+  font-size: 1.2em;
+  color: #1b5e20;
+}
+
+.tag {
+  padding: 5px 12px;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 0.85em;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
   display: flex;
   justify-content: center;
-  gap: 40px;
-  margin-top: 30px;
+  align-items: center;
+  z-index: 10;
 }
 
-.exercise-list, .exercise-detail {
+.modal-content {
   background: white;
-  padding: 20px;
-  border-radius: 12px;
-  width: 300px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 30px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  text-align: center;
 }
 
-.exercise-list ul {
-  list-style: none;
-  padding: 0;
-}
-
-.exercise-list li {
-  padding: 10px;
-  margin: 5px 0;
-  background: #e0f2f1;
-  border-radius: 8px;
+.close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
   cursor: pointer;
-  transition: 0.2s;
+  color: #888;
 }
 
-.exercise-list li:hover {
-  background: #b2dfdb;
+/* Step section */
+.step-section {
+  margin-top: 15px;
 }
 
-.exercise-detail ol {
-  text-align: left;
+.current-step {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  min-height: 50px;
+}
+
+.step-controls button {
+  background: #2e7d32;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 0.95em;
+}
+
+.step-controls button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.step-counter {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 5px;
+}
+
+.demo video {
+  border-radius: 12px;
+  max-height: 250px;
+  object-fit: cover;
+  margin-bottom: 15px;
 }

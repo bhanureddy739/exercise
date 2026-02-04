@@ -2,6 +2,10 @@ const exercises = [
   {
     id: 1,
     name: "Push Ups",
+    category: "Chest",
+    color: "#AEDFF7",
+    image: "https://img.icons8.com/ios-filled/100/2e7d32/push-up.png",
+    demo: "https://media.giphy.com/media/3o6ZsV8s8lS3KGXN3G/giphy.gif",
     steps: [
       "Start in a plank position.",
       "Lower your body until your chest nearly touches the floor.",
@@ -12,6 +16,10 @@ const exercises = [
   {
     id: 2,
     name: "Squats",
+    category: "Legs",
+    color: "#C3F7B2",
+    image: "https://img.icons8.com/ios-filled/100/2e7d32/squat.png",
+    demo: "https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif",
     steps: [
       "Stand with feet shoulder-width apart.",
       "Lower your body until your thighs are parallel to the floor.",
@@ -22,6 +30,10 @@ const exercises = [
   {
     id: 3,
     name: "Plank",
+    category: "Core",
+    color: "#FDE2B0",
+    image: "https://img.icons8.com/ios-filled/100/2e7d32/plank.png",
+    demo: "https://media.giphy.com/media/xT1R9N4Zf2v71nRyz6/giphy.gif",
     steps: [
       "Start in forearm plank position.",
       "Keep your body straight from head to heels.",
@@ -32,6 +44,10 @@ const exercises = [
   {
     id: 4,
     name: "Lunges",
+    category: "Legs",
+    color: "#C3F7B2",
+    image: "https://img.icons8.com/ios-filled/100/2e7d32/lunges.png",
+    demo: "https://media.giphy.com/media/xT1R9FOTsVsae8sf0c/giphy.gif",
     steps: [
       "Stand upright with feet together.",
       "Step forward with one leg and lower your body until both knees are bent at 90 degrees.",
@@ -42,6 +58,10 @@ const exercises = [
   {
     id: 5,
     name: "Burpees",
+    category: "Full Body",
+    color: "#F7B2B2",
+    image: "https://img.icons8.com/ios-filled/100/2e7d32/burpee.png",
+    demo: "https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif",
     steps: [
       "Start in standing position.",
       "Drop into a squat and place hands on the floor.",
@@ -52,102 +72,98 @@ const exercises = [
   },
   {
     id: 6,
-    name: "Bicep Curls (with Dumbbells)",
+    name: "Bicep Curls",
+    category: "Arms",
+    color: "#D5B3F7",
+    image: "https://img.icons8.com/ios-filled/100/2e7d32/dumbbell.png",
+    demo: "https://media.giphy.com/media/l0MYEqEzwMWFCg8rm/giphy.gif",
     steps: [
       "Hold dumbbells at your sides with palms facing forward.",
-      "Curl the weights up toward your shoulders while keeping elbows close to your body.",
+      "Curl the weights up toward your shoulders.",
       "Lower the weights back to starting position.",
       "Repeat for desired reps."
     ]
   },
   {
     id: 7,
-    name: "Shoulder Press (with Dumbbells)",
+    name: "Arm Circles",
+    category: "Arms",
+    color: "#D5B3F7",
+    image: "https://img.icons8.com/ios-filled/100/2e7d32/arm.png",
+    demo: "https://media.giphy.com/media/3o6ZsV0vI9hBKD7h5e/giphy.gif",
     steps: [
-      "Hold dumbbells at shoulder height with palms facing forward.",
-      "Press the weights overhead until arms are fully extended.",
-      "Lower back to starting position.",
+      "Stand with feet shoulder-width apart.",
+      "Extend your arms straight out to the sides.",
+      "Make small circles forward, then backward.",
       "Repeat for desired reps."
     ]
   },
   {
     id: 8,
-    name: "Tricep Dips",
+    name: "Side Stretches",
+    category: "Core",
+    color: "#FDE2B0",
+    image: "https://img.icons8.com/ios-filled/100/2e7d32/stretch.png",
+    demo: "https://media.giphy.com/media/xT0xeJpnrWC4XWblEk/giphy.gif",
     steps: [
-      "Sit on the edge of a bench or chair and place hands next to hips.",
-      "Slide your hips off the edge and lower your body by bending elbows to 90 degrees.",
-      "Push back up to starting position.",
-      "Repeat for desired reps."
+      "Stand with feet shoulder-width apart.",
+      "Raise one arm overhead and lean to the opposite side.",
+      "Hold for a few seconds.",
+      "Switch sides and repeat."
     ]
   },
   {
     id: 9,
-    name: "Mountain Climbers",
+    name: "Calf Raises",
+    category: "Legs",
+    color: "#C3F7B2",
+    image: "https://img.icons8.com/ios-filled/100/2e7d32/leg.png",
+    demo: "https://media.giphy.com/media/l3q2K5jinAlChoCLS/giphy.gif",
     steps: [
-      "Start in a plank position.",
-      "Drive one knee toward your chest, then switch legs rapidly.",
-      "Continue alternating as quickly as possible.",
-      "Maintain core tight and back straight."
+      "Stand with feet hip-width apart.",
+      "Lift your heels off the ground and balance on toes.",
+      "Lower back down slowly.",
+      "Repeat for desired reps."
     ]
   },
   {
     id: 10,
-    name: "Deadlift (with Dumbbells or Barbell)",
+    name: "Wall Sit",
+    category: "Legs",
+    color: "#C3F7B2",
+    image: "https://img.icons8.com/ios-filled/100/2e7d32/wall.png",
+    demo: "https://media.giphy.com/media/l0ExvF2TFH7hwHCBq/giphy.gif",
     steps: [
-      "Stand with feet hip-width apart, holding weights in front of thighs.",
-      "Hinge at the hips to lower weights toward the ground, keeping back straight.",
-      "Engage glutes and hamstrings to return to standing.",
-      "Repeat for desired reps."
+      "Lean your back against a wall.",
+      "Slide down until thighs are parallel to the floor.",
+      "Hold position for desired time.",
+      "Stand up slowly."
     ]
   },
   {
     id: 11,
-    name: "Bench Press (with Barbell or Dumbbells)",
+    name: "Seated Twist",
+    category: "Core",
+    color: "#FDE2B0",
+    image: "https://img.icons8.com/ios-filled/100/2e7d32/twist.png",
+    demo: "https://media.giphy.com/media/3orieZJHG5A3j8vwwc/giphy.gif",
     steps: [
-      "Lie on a bench with feet flat on the floor.",
-      "Hold weights at chest level with elbows bent.",
-      "Press weights upward until arms are fully extended.",
-      "Lower back to starting position.",
-      "Repeat for desired reps."
+      "Sit on the floor with legs crossed.",
+      "Twist your torso to the right, then left.",
+      "Repeat slowly for desired reps."
     ]
   },
   {
     id: 12,
-    name: "Leg Raises",
-    steps: [
-      "Lie flat on your back with legs extended.",
-      "Lift legs toward the ceiling while keeping them straight.",
-      "Lower them back down without touching the floor.",
-      "Repeat for desired reps."
-    ]
-  },
-  {
-    id: 13,
-    name: "Russian Twists",
-    steps: [
-      "Sit on the floor with knees bent and feet lifted slightly.",
-      "Hold a weight or just clasp hands together.",
-      "Twist torso to one side, then to the other.",
-      "Repeat for desired reps."
-    ]
-  },
-  {
-    id: 14,
     name: "Jumping Jacks",
+    category: "Full Body",
+    color: "#F7B2B2",
+    image: "https://img.icons8.com/ios-filled/100/2e7d32/jumping-jack.png",
+    demo: "https://media.giphy.com/media/xT0GqFPT0e0xj2Jd7O/giphy.gif",
     steps: [
-      "Stand upright with feet together and hands at sides.",
-      "Jump and spread legs while raising arms overhead.",
+      "Stand upright with feet together.",
+      "Jump while spreading arms and legs.",
       "Return to starting position.",
-      "Repeat for desired reps."
-    ]
-  },
-  {
-    id: 15,
-    name: "Pull Ups",
-    steps: [
-      "Grab a pull-up bar with palms facing away from you.",
-      "Pull your body up until your chin is above the bar.",
-      "Lower back down with control.",
       "Repeat for desired reps."
     ]
   }
